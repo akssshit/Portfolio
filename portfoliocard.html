@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshit Kumar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(4, 33, 19);
+            height: 100vh;
+        }
+        .box{
+            background-color: rgb(5, 12, 29);
+            box-shadow: 10px 10px 25px darkseagreen,
+            -5px -5px 25px darkseagreen;
+            height:450px ;
+            width: 680px;
+            border-radius: 40px;
+            display: flex;
+            flex-direction: column;
+   align-items: center;
+        }
+        .name{
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-top: 30px;
+            font-size: 40px;
+        }
+        .abt{
+            color: white;
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            border-left: 6px  solid gray;
+        }
+        .ulskill{
+            color: white;
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            display: flex;
+   list-style: none;
+        }
+        .skill{
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.326);
+       border-radius: 15px;
+            margin:2px 20px;
+            transition: transform .4s ease-in-out;
+        }
+        .skill:hover{
+            transform: scale(1.05) skewX(10px);
+        }
+        .visit{
+            text-decoration: none;
+            color: white;
+            background-color: rgba(255, 255, 255, 0.304);
+            backdrop-filter: blur(15px);
+            padding: 10px 20px;
+            border-radius: 10px;
+            margin:40px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            transition: all .3s ease-in-out;
+        }
+        .visit:hover{
+            color: white;
+            background-color: darkseagreen;
+            transform: scale(1.04) skewX(10px);
+        }
+        @media (max-width: 720px) {
+  .box {
+    width: 90%;
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .ulskill {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .skill {
+    margin: 10px;
+  }
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="box">
+<h1 class="name">Akshit Kumar</h1>
+<p class="abt">I am a young web developer and a Class 6 student who loves building websites using HTML and CSS, and I am currently learning JavaScript to make my projects more interactive.</p>
+<ul class="ulskill">
+    <li class="skill">HTML</li>
+    <li class="skill">CSS</li>
+    <li class="skill">JS</li>
+    <li class="skill">Canva</li>
+</ul>
+<a href="http://akshitcreates.netlify.app/portfolio" target="_blank" rel="noopener noreferrer" onclick="sayHello()" class="visit">Visit my Portfolio</a>
+</div>
+
+<script>
+  function sayHello() {
+    alert("Thanks for visiting my portfolio!");
+  }
+</script>
+
+</body>
+
+</html>
